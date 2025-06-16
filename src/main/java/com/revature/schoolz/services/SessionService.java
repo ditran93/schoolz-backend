@@ -9,7 +9,7 @@ import com.revature.schoolz.models.User;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 
-public class SessionServices {
+public class SessionService {
     private static final String SESSION_ID = "sessionId";
 
     public UserSession createSession(User user) {

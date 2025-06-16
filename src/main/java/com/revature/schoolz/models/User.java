@@ -24,4 +24,10 @@ public class User {
     @Column(name = "is_active", nullable = false)
     private Boolean isActive = true;
 
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
+        this.role = UserRole.STUDENT; // Default role
+        // Default constructor for JPA
+    }
 }
